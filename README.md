@@ -41,8 +41,8 @@ This is a **React-based Role-Based Access Control (RBAC)** frontend application 
 ## Tech Stack
 
 - **Frontend Framework**: React + Vite
-- **State Management**: Context API / Redux
-- **Styling**: Tailwind CSS / CSS Modules
+- **State Management**:  Redux
+- **Styling**: CSS Modules
 - **Routing**: React Router for page navigation
 
 ---
