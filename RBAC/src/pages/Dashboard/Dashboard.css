@@ -1,0 +1,118 @@
+/* Ensure the body takes the full height */
+
+/* Style for the modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Style for the modal content */
+.modal-content {
+  position: relative;
+  max-width: 600px; /* Optional: Set a max-width for your modal */
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1050; /* Ensure modal is above the overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 90%; /* Ensure the modal doesn't overflow */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Optional: Style the close button */
+.modal-action-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.modal-action-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Style the open modal button */
+.open-modal-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.open-modal-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive Styles */
+
+/* For small devices like mobile phones */
+@media (max-width: 576px) {
+  .modal-content {
+    padding: 15px;
+    width: 90%; /* Ensure modal doesn't take up full width */
+    max-width: 100%;
+    box-shadow: none; /* Remove shadow for smaller devices */
+  }
+
+  .modal-action-btn {
+    width: 100%; /* Make the button full width */
+    padding: 12px 0;
+  }
+
+  .open-modal-btn {
+    width: 100%; /* Make the button full width */
+    padding: 12px 0;
+  }
+}
+
+/* For larger devices (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .modal-content {
+    width: 80%; /* Use 80% of the screen width for tablets */
+  }
+
+  .modal-action-btn {
+    width: 100%; /* Make the button full width */
+    padding: 12px 0;
+  }
+
+  .open-modal-btn {
+    width: 100%; /* Make the button full width */
+    padding: 12px 0;
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 769px) {
+  .modal-content {
+    width: 50%; /* Use 50% of the screen width for larger screens */
+  }
+
+  .modal-action-btn {
+    width: auto; /* Default width for larger screens */
+    padding: 10px 20px;
+  }
+
+  .open-modal-btn {
+    width: auto; /* Default width for larger screens */
+    padding: 10px 20px;
+  }
+}

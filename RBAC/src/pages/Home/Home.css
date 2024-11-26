@@ -1,0 +1,135 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem; /* Adjusted for better scaling */
+}
+
+.home-para {
+  max-width: 75%; /* Changed to percentage for responsiveness */
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1rem; /* Relative font size for scalability */
+}
+
+.home-head h1 {
+  font-size: clamp(1.8rem, 5vw, 2.3rem); /* Clamping for responsiveness */
+}
+
+.home-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7rem; /* Adjusted for relative positioning */
+  padding: 0 1rem;
+}
+
+.home-start-btn {
+  margin-top: 2rem;
+}
+
+.home-start-btn button {
+  padding: 0.6rem 1rem; /* Scaled for responsiveness */
+  border: none;
+  background-color: rgb(93, 129, 239);
+  font-weight: 600;
+  font-size: 1rem; /* Relative font size */
+  border-radius: 1.25rem; /* Scaled with button size */
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.home-start-btn button:hover {
+  background-color: rgb(46, 93, 233);
+}
+.home-start-btn button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-head h1 span {
+  color: rgb(85, 122, 235);
+}
+
+.home-gallery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4rem 3%;
+  gap: 1rem;
+  flex-wrap: wrap; /* Ensures items adjust on smaller screens */
+}
+
+.home-gallery img {
+  height: auto; /* Auto-resizes with parent container */
+  max-width: 100%; /* Ensures image fits container */
+  border-radius: 0.625rem;
+}
+
+.home-gallery div {
+  border: 1px solid rgba(0, 0, 0, 0.129);
+  padding: 0.6rem;
+  border-radius: 0.625rem;
+  color: rgb(23, 22, 22);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  flex: 1 1 30%; /* Makes divs flexibly shrink or grow */
+  max-width: 300px; /* Prevents excessive scaling */
+}
+.home-gallery div p {
+  font-size: 0.8rem;
+  color: #1f1b1b99;
+  transition: all 0.4s ease-in-out;
+}
+
+.home-gallery div p:hover {
+  color: #000;
+}
+
+.home-gallery div:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 15px #87d1ef;
+}
+
+@media (max-width: 768px) {
+  .home-head {
+    margin-top: 5rem; /* Adjusted spacing */
+  }
+  .home-gallery {
+    margin: 3rem 2%;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-gallery {
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 1rem;
+  }
+  .home-gallery div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .home-gallery img {
+    max-width: 90%;
+  }
+  .home-container .home-head h1 {
+    font-size: 1.5rem; /* Adjusted for smaller screens */
+  }
+  .home-container .home-para {
+    color: gray;
+    width: 100%;
+    text-align: center;
+  }
+}

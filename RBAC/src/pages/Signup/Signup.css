@@ -1,0 +1,118 @@
+/* General styles for the signup container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+/* Styling for the signup box */
+.signup-box {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 550px;
+  text-align: center;
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Input group styles */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Input focus style */
+.input-group input:focus,
+.input-group select:focus {
+}
+
+/* Show password toggle */
+.password-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.password-toggle label {
+  color: #555;
+}
+
+/* Signup button styles */
+.signup-btn {
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.signup-btn:hover {
+  background-color: #0084d6;
+}
+
+/* Custom Toast Styles */
+.toast-success {
+  background: linear-gradient(90deg, #4caf50, #2e7d32);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.toast-error {
+  background: linear-gradient(90deg, #f44336, #b71c1c);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.custom-toast {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-toast-body {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Optional: Add spacing to form elements */
+.form-element {
+  margin-bottom: 15px;
+}
+
+/* Optional: Add a line for better readability */
+.signup-box hr {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}

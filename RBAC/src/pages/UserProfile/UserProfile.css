@@ -1,0 +1,151 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(120deg, #eceff4, #ffffff);
+}
+
+/* Login Reminder Styling */
+.login-reminder {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Card Container */
+.profile-card-container {
+  text-align: center;
+  width: 50%;
+  max-width: 800px;
+  min-width: 300px;
+}
+
+@media (max-width: 1024px) {
+  .profile-card-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card-container {
+    width: 90%;
+  }
+}
+
+/* Profile Card */
+.profile-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image Styling */
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #89cff0, #6a8fe7);
+  padding: 5px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* Profile Details Styling */
+.profile-details {
+  text-align: center;
+}
+
+.user-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-email,
+.user-role,
+.role-info {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.role-info {
+  margin-top: 10px;
+  color: #777;
+}
+
+/* Back to Dashboard and Login Button */
+.back-button-link {
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.back-button {
+  background: #6a8fe7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #5a7bd6;
+}
+
+/* Profile Image Container */
+.profile-image-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+  width: 150px;           /* Set a fixed width */
+  height: 150px;          /* Set a fixed height */
+  border-radius: 50%;     /* Makes the container circular */
+  background: linear-gradient(135deg, #89cff0, #6a8fe7); /* Gradient background */
+  padding: 5px;
+  margin: 0 auto;         /* Centers the container itself in its parent */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image scales properly */
+  border: 3px solid #fff; /* Optional border for aesthetics */
+}
+
+/* Other CSS remains the same */

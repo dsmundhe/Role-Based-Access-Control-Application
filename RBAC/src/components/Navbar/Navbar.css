@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.navbar .nav-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navbar .nav-btns button:hover{
+  background-color: rgb(42, 89, 230);
+
+}
+
+.navbar .nav-btns button {
+  padding: 10px 15px;
+  border: none;
+  background-color: rgb(93, 129, 239);
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
